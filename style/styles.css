@@ -1,0 +1,156 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fondo degradado */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00ffff, #8a2be2);
+}
+
+/* Contenedor del login */
+.login-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 15px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
+    animation: aparecer 1s ease;
+
+}
+
+/* Animación de entrada */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título */
+.login-container h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+/* Inputs */
+.input-group {
+    margin-bottom: 1.2rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* Botón animado */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #00ffff, #8a2be2);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Texto inferior */
+.footer-text {
+    text-align: center;
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Reponsividad */
+@media (max-width: 480px) {
+    .login-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+}
+
+.foto-de-usuario {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;     
+    margin: auto;
+    border-style: solid;
+}
+
+.foto-de-usuario img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    animation: aparecer 1s ease;
+}
+
+.borders {
+    box-shadow: 0, 0, 0, 0.8 #000;
+    opacity: 0.8;
+}
+
+/* Contenedor del input con ojo */
+.password-group {
+    position: relative;
+}
+
+/* Input */
+.borders {
+    width: 100%;
+    padding: 12px;
+    padding-right: 45px; /* espacio para el ojo */
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* Icono de ojo */
+.eye-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: default;
+}
+
+.eye-icon img {
+    width: 22px;
+    opacity: 0.7;
+}
+
+/* Solo efecto visual */
+.eye-icon img:hover {
+    opacity: 1;
+}
