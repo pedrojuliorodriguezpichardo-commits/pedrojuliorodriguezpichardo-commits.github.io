@@ -96,7 +96,7 @@ button:hover {
     }
 }
 
-.foto-de-usuario {
+div.foto-de-usuario {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -105,7 +105,7 @@ button:hover {
     border-style: solid;
 }
 
-.foto-de-usuario img {
+div.foto-de-usuario img {
     width: 100%;
     height: 100%;
     object-fit: cover;
