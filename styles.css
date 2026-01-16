@@ -102,7 +102,7 @@ div.foto-de-usuario {
     border-radius: 50%;
     overflow: hidden;     
     margin: auto;
-    border-style: solid;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5)
 }
 
 div.foto-de-usuario img {
